@@ -40,7 +40,7 @@ jobs:
       - name: Upload file to bucket
         uses: zdurham/s3-upload-github-action@master
         with:
-           args: --acl public-read
+          args: --acl public-read
         env:
           FILE: ./bundle.zip
           AWS_REGION: 'us-east-1'
